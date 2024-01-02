@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivation Card Generator</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    #card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #FFD700;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    #flower-images {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .flower-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .flower-image:hover {
+      transform: scale(1.2);
+    }
+
+    #buttons-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #download-button,
+    #share-button {
+      margin: 0 10px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      line-height: 1.2;
+      transition: font-family 0.5s ease-in-out;
+    }
+
+    p {
+      font-style: italic;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      transition: font-family 0.5s ease-in-out;
+    }
+    
+    #footer {
+      font-size: 9px;
+      color: #7aff00;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="name">Enter Name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <button class="btn btn-primary" onclick="generateCard()">Generate Card/generate another</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="card-container"></div>
+  <div id="buttons-container" class="d-none"></div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="script.js">
+    
+  </script>
+
+</body>
+</html>
